@@ -70,8 +70,9 @@ export default function ArcsPage() {
           <DocsCode>path=&quot;greatCircle&quot;</DocsCode> to render the true
           shortest path over the sphere (the orthodrome) instead. This is the
           route an aircraft actually flies, so long-haul connections bend
-          toward the poles — a San Francisco → London flight arcs over
-          Greenland, not straight across the Atlantic. In this mode{" "}
+          toward the poles — the same London hub as above, but a London → New
+          York flight now arcs up over Greenland instead of straight across the
+          Atlantic. In this mode{" "}
           <DocsCode>curvature</DocsCode> is ignored, while{" "}
           <DocsCode>samples</DocsCode> still controls smoothness. Great circles
           look most natural on the <DocsCode>globe</DocsCode> projection.

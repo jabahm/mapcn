@@ -6,11 +6,11 @@ import {
   MarkerLabel,
 } from "@/registry/map";
 
-const hub = { name: "San Francisco", lng: -122.4194, lat: 37.7749 };
+const hub = { name: "London", lng: -0.1276, lat: 51.5074 };
 
 const destinations = [
+  { name: "New York", lng: -74.006, lat: 40.7128 },
   { name: "Tokyo", lng: 139.6917, lat: 35.6895 },
-  { name: "London", lng: -0.1276, lat: 51.5074 },
   { name: "Sydney", lng: 151.2093, lat: -33.8688 },
 ];
 
