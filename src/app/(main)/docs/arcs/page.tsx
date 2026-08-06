@@ -25,8 +25,8 @@ export default function ArcsPage() {
       next={{ title: "GeoJSON", href: "/docs/geojson" }}
       toc={[
         { title: "Basic Arc", slug: "basic-arc" },
-        { title: "Great Circle Paths", slug: "great-circle-paths" },
         { title: "Interactive Arcs", slug: "interactive-arcs" },
+        { title: "Great Circle Paths", slug: "great-circle-paths" },
       ]}
     >
       <DocsSection>
@@ -50,6 +50,19 @@ export default function ArcsPage() {
         </ComponentPreview>
       </DocsSection>
 
+      <DocsSection title="Interactive Arcs">
+        <p>
+          Combine <DocsCode>hoverPaint</DocsCode> with{" "}
+          <DocsCode>onHover</DocsCode> to highlight an arc and surface details
+          in a <DocsCode>MapPopup</DocsCode>. Use a <DocsCode>match</DocsCode>{" "}
+          expression on <DocsCode>line-color</DocsCode> to style arcs by
+          category. Here, air and sea lanes are styled differently.
+        </p>
+        <ComponentPreview code={interactiveArcSource}>
+          <InteractiveArcExample />
+        </ComponentPreview>
+      </DocsSection>
+
       <DocsSection title="Great Circle Paths">
         <p>
           By default arcs are decorative Bézier curves bowed by{" "}
@@ -65,19 +78,6 @@ export default function ArcsPage() {
         </p>
         <ComponentPreview code={greatCircleArcSource}>
           <GreatCircleArcExample />
-        </ComponentPreview>
-      </DocsSection>
-
-      <DocsSection title="Interactive Arcs">
-        <p>
-          Combine <DocsCode>hoverPaint</DocsCode> with{" "}
-          <DocsCode>onHover</DocsCode> to highlight an arc and surface details
-          in a <DocsCode>MapPopup</DocsCode>. Use a <DocsCode>match</DocsCode>{" "}
-          expression on <DocsCode>line-color</DocsCode> to style arcs by
-          category. Here, air and sea lanes are styled differently.
-        </p>
-        <ComponentPreview code={interactiveArcSource}>
-          <InteractiveArcExample />
         </ComponentPreview>
       </DocsSection>
     </DocsLayout>

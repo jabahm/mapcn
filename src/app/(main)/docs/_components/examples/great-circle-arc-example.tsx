@@ -11,8 +11,6 @@ const hub = { name: "San Francisco", lng: -122.4194, lat: 37.7749 };
 const destinations = [
   { name: "Tokyo", lng: 139.6917, lat: 35.6895 },
   { name: "London", lng: -0.1276, lat: 51.5074 },
-  { name: "Singapore", lng: 103.8198, lat: 1.3521 },
-  { name: "Dubai", lng: 55.2708, lat: 25.2048 },
   { name: "Sydney", lng: 151.2093, lat: -33.8688 },
 ];
 
